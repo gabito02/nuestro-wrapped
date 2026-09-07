@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro WhatsApp Wrapped ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Intro -->
+        <section class="slide" id="slide1" style="background-color: #ff4b4b;">
+            <h1>El Wrapped de<br>Gabriel y Eimi</h1>
+            <p>Una mirada a todos nuestros mensajes...</p>
+            <div class="scroll-indicator">↓ Desliza para descubrir</div>
+        </section>
+
+        <!-- Mensajes Totales -->
+        <section class="slide" id="slide2" style="background-color: #4b0082;">
+            <h2>Este año nos enviamos...</h2>
+            <h1 id="total-messages">0</h1>
+            <p>mensajes en total.</p>
+            <p>¡Eso es mucho chisme y amor!</p>
+        </section>
+
+        <!-- Mensajes por Usuario -->
+        <section class="slide" id="slide3" style="background-color: #1db954;">
+            <h2>¿Quién habló más?</h2>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Gabriel</h3>
+                    <p id="gabriel-msg">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Eimi</h3>
+                    <p id="eimi-msg">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gráfico de horas -->
+        <section class="slide" id="slide4" style="background-color: #ff8c00;">
+            <h2>Nuestra hora pico</h2>
+            <div class="chart-container">
+                <canvas id="timeChart"></canvas>
+            </div>
+            <p>Siempre hablando hasta la madrugada...</p>
+        </section>
+
+        <!-- Emojis -->
+        <section class="slide" id="slide5" style="background-color: #e91e63;">
+            <h2>Nuestros Emojis Favoritos</h2>
+            <div id="emojis-container" class="emojis">
+                <!-- Emojis inyectados por JS -->
+            </div>
+        </section>
+
+        <!-- Word Cloud -->
+        <section class="slide" id="slide6" style="background-color: #000000;">
+            <h2>Nuestras Palabras</h2>
+            <p>Todo lo que nos dijimos, resumido en un corazón:</p>
+            <img src="wordcloud.png" alt="Word Cloud Corazón" class="wordcloud">
+        </section>
+        
+        <!-- Outro Mesiversario -->
+        <section class="slide" id="slide7" style="background-color: #121212;">
+            <h1>¡Feliz Mesiversario #15!</h1>
+            <p>06/09 ❤️</p>
+            <p>Por muchos mensajes, stickers y brawls más.</p>
+            <p>Te amo ❤️</p>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
